@@ -1,15 +1,19 @@
-using System;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using WebsiteJob.Model.Models;
 
-namespace WebsiteJob.Model.Models
+namespace WebsiteJob.Data
 {
-    public partial class Model1 : DbContext
+    public partial class WebsiteJobDbContext : DbContext
     {
-        public Model1()
-            : base("name=Model1")
+        public WebsiteJobDbContext()
+            : base("WebsiteJobConnection")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public virtual DbSet<Candidate> Candidates { get; set; }
@@ -138,6 +142,9 @@ namespace WebsiteJob.Model.Models
             modelBuilder.Entity<VisitorStatistic>()
                 .Property(e => e.IPAddress)
                 .IsUnicode(false);
+
+
+
         }
     }
 }
