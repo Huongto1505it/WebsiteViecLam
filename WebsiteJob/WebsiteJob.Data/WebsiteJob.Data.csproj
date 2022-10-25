@@ -58,11 +58,27 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Repositories\PostCategoryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <Compile Include="Repositories\CandidateRepository.cs" />
+    <Compile Include="Repositories\EmployerRepository.cs" />
+    <Compile Include="Repositories\FooterRepository.cs" />
+    <Compile Include="Repositories\JobCategoryRepository.cs" />
+    <Compile Include="Repositories\JobRepository.cs" />
+    <Compile Include="Repositories\MenuGroupRepository.cs" />
+    <Compile Include="Repositories\MenuRepository.cs" />
+    <Compile Include="Repositories\PageRepository.cs" />
+    <Compile Include="Repositories\PostRepository.cs" />
+    <Compile Include="Repositories\SlideRepository.cs" />
+    <Compile Include="Repositories\SupportOnlineRepository.cs" />
+    <Compile Include="Repositories\sysdiagramRepository.cs" />
+    <Compile Include="Repositories\SystemConfigRepository.cs" />
+    <Compile Include="Repositories\TagRepository.cs" />
+    <Compile Include="Repositories\VisitorStatisticRepository.cs" />
     <Compile Include="WebsiteJobDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
