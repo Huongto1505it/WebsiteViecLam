@@ -8,7 +8,7 @@ using WebsiteJob.Model.Models;
 
 namespace WebsiteJob.Data.Repositories
 {
-    public interface IsysdiagramRepository
+    public interface IsysdiagramRepository : IRepository<sysdiagram>
     {
 
     }

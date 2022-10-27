@@ -8,7 +8,7 @@ using WebsiteJob.Model.Models;
 
 namespace WebsiteJob.Data.Repositories
 {
-    public interface IMenuRepository
+    public interface IMenuRepository : IRepository<Menu>
     {
 
     }

@@ -8,9 +8,10 @@ using WebsiteJob.Model.Models;
 
 namespace WebsiteJob.Data.Repositories
 {
-    public interface IPostRepository
+    public interface IPostRepository : IRepository<Post>
     {
         IEnumerable<Post> GetByAlias(string alias);
+        IEnumerable<Post> GetMultiPaging();
     }
    public class PostRepository:RepositoryBase<Post>,IPostRepository
     {
@@ -20,6 +21,11 @@ namespace WebsiteJob.Data.Repositories
         public IEnumerable<Post> GetByAlias(string alias)
         {
             return this.DbContext.Posts.Where(x => x.Alas == alias);
+        }
+
+        public IEnumerable<Post> GetMultiPaging()
+        {
+            throw new NotImplementedException();
         }
     }
 }

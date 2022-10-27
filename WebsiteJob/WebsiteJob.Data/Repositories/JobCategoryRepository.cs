@@ -8,7 +8,7 @@ using WebsiteJob.Model.Models;
 
 namespace WebsiteJob.Data.Repositories
 {
-    public interface IJobCategoryRepository
+    public interface IJobCategoryRepository : IRepository<JobCategory>
     {
         IEnumerable<JobCategory> GetByAlias(string alias);
     }

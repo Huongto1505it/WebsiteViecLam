@@ -8,7 +8,7 @@ using WebsiteJob.Model.Models;
 
 namespace WebsiteJob.Data.Repositories
 {
-    public interface IPostCategoryRepository
+    public interface IPostCategoryRepository : IRepository<PostCategory>
     {
         IEnumerable<PostCategory> GetByAlias(string alias);
     }
